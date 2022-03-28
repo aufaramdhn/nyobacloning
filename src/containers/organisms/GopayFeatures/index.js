@@ -1,8 +1,10 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
 import GopayFeatured from '../../../components/moleculs/GopayFeatured';
+import {useNavigation} from '@react-navigation/native';
 
 const GopayFeatures = () => {
+  const navigation = useNavigation();
   return (
     <View style={{marginHorizontal: 20, marginTop: 10}}>
       <View
@@ -31,6 +33,7 @@ const GopayFeatures = () => {
         <GopayFeatured
           title="pay"
           image={require('../../../assets/images/icon/pay.png')}
+          onPress={() => navigation.navigate('Scan')}
         />
         <GopayFeatured
           title="Nearby"

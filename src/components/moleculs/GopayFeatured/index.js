@@ -1,9 +1,11 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 const GopayFeatured = props => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <TouchableOpacity
+      style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}
+      onPress={props.onPress}>
       <Image source={props.image} />
       <Text
         style={{
@@ -14,7 +16,7 @@ const GopayFeatured = props => {
         }}>
         {props.title}
       </Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 

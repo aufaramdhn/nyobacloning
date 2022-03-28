@@ -1,6 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import NavBarIcon from '../../../components/moleculs/NavBarIcon';
+withNavigation;
 
 const NavBar = () => {
   return (
